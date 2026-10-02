@@ -227,19 +227,19 @@ details p{padding:0 0 18px;color:var(--muted);max-width:40em}
       <p class="sub">Probalo ahora: en el ejercicio de al lado escribí algo tuyo y mirá cómo se completa la fórmula.</p>
     </div>
 
-    <article class="sheet" aria-label="Ejercicio de muestra: el miedo como guía">
-      <p class="sheet-quote">“Agradezco al miedo como guía que me empuja a expandirme.”</p>
+    <article class="sheet" aria-label="Ejercicio de muestra: equilibrio interior">
+      <p class="sheet-quote">“Agradezco poder habitar el equilibrio interior, esa energía silenciosa que restaura mi cuerpo y calma mi mente.”</p>
       <dl>
-        <div class="row"><dt>La idea</dt><dd>El miedo no aparece para detenerte, aparece cuando estás frente a un borde nuevo de tu consciencia.</dd></div>
-        <div class="row"><dt>Un ejemplo</dt><dd><em>“Agradezco el miedo que sentí al animarme a dar un nuevo paso personal, eso me permitió descubrir una fuerza interna que no sabía que tenía y confiar más en mí.”</em></dd></div>
+        <div class="row"><dt>La idea</dt><dd>Tu cuerpo busca el equilibrio de manera natural. Cuando le das espacio y silencio, se reorganiza desde dentro: el equilibrio no se fuerza, se permite.</dd></div>
+        <div class="row"><dt>Un ejemplo</dt><dd><em>“Hoy elijo mantenerme en equilibrio, aunque el entorno se mueva. No necesito controlar, solo respirar, sentir y volver al centro.”</em></dd></div>
         <div class="row"><dt>Tu fórmula</dt><dd>
-          <label for="sit">Completala con algo que hoy te dé miedo</label>
-          <input class="try" id="sit" type="text" maxlength="80" placeholder="Por ejemplo: empezar un proyecto propio" autocomplete="off">
-          <p class="formula">Agradezco el miedo que aparece ante <mark id="sitOut" class="ph">tu situación</mark>, eso me permite convertir esa energía en impulso para avanzar con mayor confianza y consciencia.</p>
+          <label for="sit">Completala con lo que te ayuda a volver a tu centro</label>
+          <input class="try" id="sit" type="text" maxlength="80" placeholder="Por ejemplo: respirar hondo antes de responder" autocomplete="off">
+          <p class="formula">Agradezco que <mark id="sitOut" class="ph">eso que te ayuda a volver a tu centro</mark> me permita habitar el equilibrio interior, esa energía silenciosa que restaura mi cuerpo y calma mi mente.</p>
         </dd></div>
-        <div class="row"><dt>Tu práctica</dt><dd>Escribí una situación que hoy te genere miedo. Luego, reescribila agradeciendo lo que ese miedo viene a mostrarte.</dd></div>
+        <div class="row"><dt>Tu práctica</dt><dd>Sentate con la espalda recta, llevá las manos al pecho y respirá profundo tres veces, imaginando una luz dorada que recorre tu cuerpo de los pies a la cabeza. Cerrá repitiendo: “inhalo equilibrio, exhalo expansión”.</dd></div>
       </dl>
-      <p class="sheet-close">“Elijo avanzar, incluso con miedo, porque confío en mi proceso.”</p>
+      <p class="sheet-close">“Inhalo equilibrio, exhalo expansión.”</p>
     </article>
   </div>
 </section>
@@ -360,17 +360,17 @@ details p{padding:0 0 18px;color:var(--muted);max-width:40em}
   var WA = "5491168030906";
 
   var PICKS = [
-    {t:"El movimiento despierta mi poder", d:"El cuerpo también se reinventa: cuando te movés, conectás con tu fuerza física, emocional y espiritual."},
-    {t:"El miedo como guía", d:"Dejar de ver al miedo como enemigo y usarlo como impulso para avanzar con más confianza."}
+    {t:"El miedo como guía", d:"Dejar de ver al miedo como enemigo y usarlo como impulso para avanzar con más confianza."},
+    {t:"Equilibrio interior", d:"Volver a tu centro conectando con la calma que ya habita en tu cuerpo, sin necesidad de controlarlo todo."}
   ];
 
   var STATEMENTS = [
     "Ya no soy la misma de antes, pero me sigo exigiendo como si lo fuera.",
     "Quiero animarme a algo nuevo, pero el miedo me frena.",
-    "Hace tiempo que no sé qué me da energía de verdad.",
+    "Siento que si no controlo todo, se me desarma la calma.",
     "Me apuro, me comparo y siento que voy tarde.",
     "Me quedé con una imagen de mí que ya no me representa.",
-    "Vivo en la cabeza y siento el cuerpo desconectado.",
+    "Mi mente no para, aunque mi cuerpo ya esté agotado.",
     "Quiero cambiar algo, pero no sé por dónde empezar.",
     "Necesito frenar un poco y no me lo permito."
   ];
@@ -385,7 +385,7 @@ details p{padding:0 0 18px;color:var(--muted);max-width:40em}
   sit.addEventListener("input", function(){
     var v = sit.value.trim();
     if(v){ sitOut.textContent = v; sitOut.classList.remove("ph"); }
-    else { sitOut.textContent = "tu situación"; sitOut.classList.add("ph"); }
+    else { sitOut.textContent = "eso que te ayuda a volver a tu centro"; sitOut.classList.add("ph"); }
   });
 
   /* Autocheck */
@@ -422,10 +422,10 @@ details p{padding:0 0 18px;color:var(--muted);max-width:40em}
       noteEl.textContent = "Marcá arriba lo que te pasa y te dejo un mensaje para empezar. Si preferís, pedí los ejercicios directamente.";
     } else if(n < 3){
       titleEl.textContent = "Hay una parte tuya que ya está pidiendo espacio.";
-      noteEl.textContent = "No hace falta cambiarlo todo de golpe. Empezá con dos ejercicios: uno para volver a tu cuerpo y otro para mirar el miedo como guía, no como freno.";
+      noteEl.textContent = "No hace falta cambiarlo todo de golpe. Empezá con dos ejercicios: uno para mirar el miedo como guía, no como freno, y otro para habitar tu equilibrio interior.";
     } else {
       titleEl.textContent = "Estás en un momento de mucho movimiento interno.";
-      noteEl.textContent = "Eso no es un problema: es una señal de que algo quiere nacer. Empezá con dos ejercicios: uno para volver al cuerpo y otro para convertir el miedo en impulso.";
+      noteEl.textContent = "Eso no es un problema: es una señal de que algo quiere nacer. Empezá con dos ejercicios: uno para convertir el miedo en impulso y otro para habitar tu equilibrio interior.";
     }
 
     picksEl.innerHTML = PICKS.map(function(p){
